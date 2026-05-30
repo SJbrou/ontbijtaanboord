@@ -12,9 +12,9 @@
   --radius: 24px;
   --radius-sm: 18px;
   --container: 72rem;
-  /* These coordinates come from the hero SVG viewBox and match the front sail's attachment point on the mast. */
-  --sail-pivot-x: 314px;
-  --sail-pivot-y: 206px;
+  /* Derived from the 640×520 SVG viewBox so the sail pivots where it meets the mast when the illustration scales. */
+  --sail-pivot-x: 49.0625%;
+  --sail-pivot-y: 39.6154%;
 }
 
 * {
