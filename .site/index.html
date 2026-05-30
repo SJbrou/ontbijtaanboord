@@ -1,9 +1,40 @@
----
-layout: default
-title: Ontbijt Aan Boord
-description: Ontdek een premium ontbijtservice voor aan boord, vers bezorgd in de haven tussen 8.00 en 9.00 uur.
----
-<section id="top" class="hero">
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ontbijt Aan Boord · Ontbijt Aan Boord</title>
+    <meta name="description" content="Ontdek een premium ontbijtservice voor aan boord, vers bezorgd in de haven tussen 8.00 en 9.00 uur.">
+    <link rel="canonical" href="https://ontbijtaanboord.nl/">
+    <meta property="og:title" content="Ontbijt Aan Boord">
+    <meta property="og:description" content="Ontdek een premium ontbijtservice voor aan boord, vers bezorgd in de haven tussen 8.00 en 9.00 uur.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ontbijtaanboord.nl/">
+    <meta name="theme-color" content="#111827">
+    <link rel="stylesheet" href="/assets/css/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Direct naar de inhoud</a>
+
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="brand" href="#top" aria-label="Terug naar boven">
+          <span class="brand__mark" aria-hidden="true">⚓</span>
+          <span class="brand__text">Ontbijt Aan Boord</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Hoofdnavigatie">
+          <a href="#hoe-het-werkt">Hoe het werkt</a>
+          <a href="#ontbijten">Ontbijten</a>
+          <a href="#servicegebied">Servicegebied</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="top" class="hero">
   <div class="container hero__grid">
     <div class="hero__content" data-reveal>
       <p class="eyebrow">Premium ontbijtservice voor in de haven</p>
@@ -26,7 +57,60 @@ description: Ontdek een premium ontbijtservice voor aan boord, vers bezorgd in d
     </div>
 
     <div class="hero__art" data-reveal>
-      {% include hero-illustration.html %}
+      <svg class="hero-illustration" viewBox="0 0 640 520" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="seaGlow" x1="0" x2="1">
+      <stop offset="0%" stop-color="#f5f5f4" />
+      <stop offset="100%" stop-color="#d6d9df" />
+    </linearGradient>
+  </defs>
+
+  <!-- Thin line work and quiet spacing reinterpret the printed menu instead of copying it literally. -->
+  <g class="chart-grid" stroke="#cfd3da" stroke-width="1" fill="none" opacity="0.65">
+    <path d="M72 82H564" />
+    <path d="M108 118H528" />
+    <path d="M126 404H560" />
+    <path d="M98 440H522" />
+    <path d="M106 72V464" />
+    <path d="M534 72V464" />
+  </g>
+
+  <circle cx="474" cy="126" r="68" fill="url(#seaGlow)" opacity="0.8" />
+
+  <g class="wave-set wave-set--rear" fill="none" stroke="#253446" stroke-width="2.2" stroke-linecap="round" opacity="0.68">
+    <path class="wave wave--1" d="M42 356c38 0 38-12 76-12s38 12 76 12 38-12 76-12 38 12 76 12 38-12 76-12 38 12 76 12 38-12 76-12" />
+    <path class="wave wave--2" d="M18 386c40 0 40-10 80-10s40 10 80 10 40-10 80-10 40 10 80 10 40-10 80-10 40 10 80 10 40-10 80-10" opacity="0.82" />
+  </g>
+
+  <g class="boat-drift">
+    <g class="boat-rock">
+      <g class="boat-shadow" opacity="0.18">
+        <ellipse cx="322" cy="372" rx="120" ry="14" fill="#111827" />
+      </g>
+
+      <g class="boat" fill="none" stroke="#111827" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M214 348h198l-28 40H244z" fill="#fafaf9" />
+        <path d="M264 323h84l18 25H246z" fill="#f5f5f4" />
+        <path d="M310 184v164" />
+        <path d="M310 186l-102 134h102z" class="sail sail--main" fill="#ffffff" />
+        <path d="M314 206l84 102h-84z" class="sail sail--front" fill="#f8fafc" />
+        <path d="M286 286l24-16 22 16" />
+        <path d="M276 298h68" />
+        <path d="M237 347c16-18 54-28 82-28 42 0 71 10 93 28" />
+        <path d="M412 348c18 4 26 10 30 18" opacity="0.45" />
+        <path d="M210 348c-18 4-26 10-30 18" opacity="0.45" />
+        <circle cx="292" cy="336" r="3.5" fill="#111827" />
+        <circle cx="347" cy="336" r="3.5" fill="#111827" />
+      </g>
+    </g>
+  </g>
+
+  <g class="wave-set wave-set--front" fill="none" stroke="#111827" stroke-width="2.6" stroke-linecap="round">
+    <path class="wave wave--3" d="M-10 406c44 0 44-14 88-14s44 14 88 14 44-14 88-14 44 14 88 14 44-14 88-14 44 14 88 14 44-14 88-14" />
+    <path class="wave wave--4" d="M-24 434c46 0 46-10 92-10s46 10 92 10 46-10 92-10 46 10 92 10 46-10 92-10 46 10 92 10 46-10 92-10" opacity="0.75" />
+  </g>
+</svg>
+
     </div>
   </div>
 </section>
@@ -80,7 +164,7 @@ description: Ontdek een premium ontbijtservice voor aan boord, vers bezorgd in d
 <section id="ontbijten" class="section section--soft">
   <div class="container">
     <div class="section-heading" data-reveal>
-      <p class="section-label">Ontbijtselectie</p>
+      <p class="section-label">Breakfast highlights</p>
       <h2>Vier ontbijten, elk met een eigen koers.</h2>
     </div>
 
@@ -178,7 +262,7 @@ description: Ontdek een premium ontbijtservice voor aan boord, vers bezorgd in d
       <p class="section-label">Servicegebied</p>
       <h2>Gericht op jachthavens, passantenplekken en ligplaatsen aan het water.</h2>
       <p class="section-intro">
-        Ontbijt Aan Boord richt zich op levering in havens en jachthavens. Stuur bij uw bestelling de bootnaam,
+        Ontbijt Aan Boord richt zich op levering in havens en marina's. Stuur bij uw bestelling de bootnaam,
         steiger en ligplaats mee, dan stemmen wij de bezorging zorgvuldig af.
       </p>
     </div>
@@ -265,3 +349,23 @@ description: Ontdek een premium ontbijtservice voor aan boord, vers bezorgd in d
     </div>
   </div>
 </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <div>
+          <p class="footer-title">Ontbijt Aan Boord</p>
+          <p class="footer-copy">Rustige ochtenden, vers ontbijt en levering direct aan uw boot.</p>
+        </div>
+        <div class="footer-meta">
+          <a href="tel:+31618078195">06 18 07 81 95</a>
+          <a href="mailto:ontbijtaanboord@gmail.com">ontbijtaanboord@gmail.com</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- The site stays dependency-free so it works on GitHub Pages without extra tooling. -->
+    <script defer src="/assets/js/site.js"></script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+title: Ontbijt Aan Boord
+description: Premium ontbijtservice voor zeilers en havenbezoekers, vers bezorgd aan boord.
+lang: nl
+url: https://ontbijtaanboord.nl
+baseurl: ""
+timezone: Europe/Amsterdam
+markdown: kramdown
+plugins: []
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
