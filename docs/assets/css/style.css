@@ -451,6 +451,7 @@ h3 {
 }
 
 .hero-illustration .sail--front {
+  /* These coordinates match the sail's mast joint in the inline SVG so the wind motion pivots naturally. */
   transform-origin: 314px 206px;
   animation: sail-fill 6.5s ease-in-out infinite;
 }
