@@ -1,6 +1,7 @@
 title: Ontbijt Aan Boord
 description: Premium ontbijtservice voor zeilers en havenbezoekers, vers bezorgd aan boord.
 lang: nl
+# Custom domain is defined in docs/CNAME; keep this URL aligned with that production domain.
 url: https://ontbijtaanboord.nl
 baseurl: ""
 timezone: Europe/Amsterdam

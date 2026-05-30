@@ -12,7 +12,7 @@
   --radius: 24px;
   --radius-sm: 18px;
   --container: 72rem;
-  /* Derived from the 640×520 SVG viewBox so the sail pivots where it meets the mast when the illustration scales. */
+  /* 314×206 in the 640×520 SVG viewBox, converted to percentages so the sail keeps pivoting from its mast joint. */
   --sail-pivot-x: 49.0625%;
   --sail-pivot-y: 39.6154%;
 }
