@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'nl' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ page.description | default: site.description }}">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <meta property="og:title" content="{{ page.title | default: site.title }}">
+    <meta property="og:description" content="{{ page.description | default: site.description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta name="theme-color" content="#111827">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Direct naar de inhoud</a>
+
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="brand" href="#top" aria-label="Terug naar boven">
+          <span class="brand__mark" aria-hidden="true">OA</span>
+          <span class="brand__text">Ontbijt Aan Boord</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Hoofdnavigatie">
+          <a href="#hoe-het-werkt">Hoe het werkt</a>
+          <a href="#ontbijten">Ontbijten</a>
+          <a href="#servicegebied">Servicegebied</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <div>
+          <p class="footer-title">Ontbijt Aan Boord</p>
+          <p class="footer-copy">Rustige ochtenden, vers ontbijt en levering direct aan uw boot.</p>
+        </div>
+        <div class="footer-meta">
+          <a href="tel:+31618078195">06 18 07 81 95</a>
+          <a href="mailto:ontbijtaanboord@gmail.com">ontbijtaanboord@gmail.com</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- The site stays dependency-free so it works on GitHub Pages without extra tooling. -->
+    <script defer src="{{ '/assets/js/site.js' | relative_url }}"></script>
+  </body>
+</html>
