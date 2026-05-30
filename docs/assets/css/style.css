@@ -12,6 +12,8 @@
   --radius: 24px;
   --radius-sm: 18px;
   --container: 72rem;
+  --sail-pivot-x: 314px;
+  --sail-pivot-y: 206px;
 }
 
 * {
@@ -451,8 +453,8 @@ h3 {
 }
 
 .hero-illustration .sail--front {
-  /* These coordinates match the sail's mast joint in the inline SVG so the wind motion pivots naturally. */
-  transform-origin: 314px 206px;
+  /* These custom properties map to the mast joint in the SVG viewBox so the sail pivots from its rigging point. */
+  transform-origin: var(--sail-pivot-x) var(--sail-pivot-y);
   animation: sail-fill 6.5s ease-in-out infinite;
 }
 

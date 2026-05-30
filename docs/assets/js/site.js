@@ -1,5 +1,6 @@
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 const revealItems = document.querySelectorAll('[data-reveal]');
+const revealRootMargin = '0px 0px -40px 0px';
 
 document.documentElement.classList.add('js');
 
@@ -22,7 +23,7 @@ if (prefersReducedMotion.matches || !('IntersectionObserver' in window)) {
     },
     {
       threshold: 0.2,
-      rootMargin: '0px 0px -40px 0px'
+      rootMargin: revealRootMargin
     }
   );
 
